@@ -12,17 +12,6 @@ app.use(
   })
 );
 
-app.get("/evaluation-service/stocks", (req, res) => {
-  const stocks = {
-    "Apple Inc.": "AAPL",
-    "Microsoft Corporation": "MSFT",
-    "Alphabet Inc.": "GOOGL",
-    "Amazon.com Inc.": "AMZN",
-    "Tesla Inc.": "TSLA",
-  };
-
-  res.json(stocks);
-});
 app.get("/api/stocks", async (req, res) => {
   const stocks = [
     "Advanced Micro Devices, Inc.",
